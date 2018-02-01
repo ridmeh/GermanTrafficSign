@@ -48,9 +48,11 @@ Used the LeNet Architecture with some modifications:
 
 ## 7. Test with images on web
 Followin images were picked from web and tested.
+
 ![picture](5sampleimages.png)
-rig
-These images when ran with the trained model came with test set accuracy of 0.600. 
+
+These images when ran with the model came with test set accuracy of 0.600. 
+
 ## Observations
 1. After certain EPOCHs run, accuracy reaches platue and may start decreasing
 2. Distribution of classified images was not good, which created bias in the CNN.
