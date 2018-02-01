@@ -22,6 +22,10 @@ Outline of steps for running Training/Testing
 
 Below are some points explained in more detail :
 
+## 3. Preprocessing
+Image data is moved to gray scale and feature scaled that can bring mean around 0. Feature scaling  helps to avoid a single feature to dominate the distance.
+
+
 ## 2. Data analysis
 Randomly reading some sample images and displaying to see their integrity and get the feel of data that we are dealing. 
 After plotting the data distribution of training and test set it becomes clear it is skewed. I am not sure how to mitigate this. If data is not well distributed it could lead to overfitting and high accuracy in training but low accuracy in real world scenarios. For e.g. less number of road specific road sign, could lead to poor classification in real world. Resolution: We could fake data for the signposts that are low in number or reduce the numbers of signposts which are skewing the distribution.
@@ -29,11 +33,28 @@ After plotting the data distribution of training and test set it becomes clear i
 
 
 ## 4. Architecture
+Used the LeNet Architecture with some modifications: 
+# Layer 1: Convolutional. Input = 32x32x1. Output = 28x28x6
+# Activation
+# Pooling layer Input = 28x28x6. Output = 14x14x6
+# Layer 2: Convolutional. Output = 10x10x16.
+# Activation
+# Pooling layer Input = 10x10x16. Output = 5x5x16
+# Flatten. Input = 5x5x16. Output = 400
+# Layer 3: Fully Connected. Input = 400. Output = 120
+# Activation 
+# Dropout
+# Layer 4: Fully Connected. Input = 120. Output = 84
+# Activation
+# Dropout
+# Layer 5: Fully Connected. Input = 84. Output = 10.
 
 
 ## 7. Test with images on web
+Followin images were picked from web and tested.
 ![picture](5sampleimages.png)
-
+rig
+These images when ran with the trained model came with test set accuracy of 0.600. 
 ## Observations
 1. After certain EPOCHs run, accuracy reaches platue and may start decreasing
 2. Distribution of classified images was not good, which created bias in the CNN.
