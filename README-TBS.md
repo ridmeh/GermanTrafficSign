@@ -7,18 +7,17 @@ You need to create Udacity AMI in Amazon cloud.
 Run Jupyter notebooks
 Required TensorFlow/Image Processing libraries
 
-## Outline of steps performed:
+## Outline of the ask or the tasks performed:
 Main code is in Traffic_Sign_Classifier-TBS.ipynb
 Outline of steps for running Training/Testing
 1. Load training data set images
 2. Data Analysis : Review their distribution and other aspects to help choose pre-processing/processing parameters
 3. Make necessary pre-processing decisions
 4. Architecture: Configure LeNet with decided parameters
-5. Train
-6. Validate
-7. Test
-8. Take images from web and check on accuracy 
-9. Top K hits
+5. Validate
+5. Test
+7. Take images from web and check on accuracy 
+8. Perform Top K hits on above dataset
 
 Below are some points explained in more detail :
 
