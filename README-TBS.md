@@ -5,6 +5,9 @@ This is Udacity project submission to demonstrate understanding of CNNs using Te
 You need to create Udacity AMI in Amazon cloud.
 Run Jupyter notebooks
 Required TensorFlow/Image Processing libraries
+
+## Data analysis
+![picture](distribution.png)
 ## Run
 Main code is in Traffic_Sign_Classifier-TBS.ipynb
 Outline of steps for running Training/Testing
@@ -17,6 +20,9 @@ Outline of steps for running Training/Testing
 7. Test
 8. Take images from web and check on accuracy 
 9. Top K hits
+
+## Test with images on web
+![picture](5sampleimages.png)
 
 ## Observations
 1. After certain EPOCHs run, accuracy reaches platue and may start decreasing
