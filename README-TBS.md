@@ -34,20 +34,20 @@ After plotting the data distribution of training and test set it becomes clear i
 
 ## 4. Architecture
 Used the LeNet Architecture with some modifications: 
-# Layer 1: Convolutional. Input = 32x32x1. Output = 28x28x6
-# Activation
-# Pooling layer Input = 28x28x6. Output = 14x14x6
-# Layer 2: Convolutional. Output = 10x10x16.
-# Activation
-# Pooling layer Input = 10x10x16. Output = 5x5x16
-# Flatten. Input = 5x5x16. Output = 400
-# Layer 3: Fully Connected. Input = 400. Output = 120
-# Activation 
-# Dropout
-# Layer 4: Fully Connected. Input = 120. Output = 84
-# Activation
-# Dropout
-# Layer 5: Fully Connected. Input = 84. Output = 10.
+1. Convolutional. Input = 32x32x1. Output = 28x28x6
+1. Activation
+1. Pooling layer Input = 28x28x6. Output = 14x14x6
+1. Layer 2: Convolutional. Output = 10x10x16.
+1. Activation
+1. Pooling layer Input = 10x10x16. Output = 5x5x16
+1. Flatten. Input = 5x5x16. Output = 400
+1. Layer 3: Fully Connected. Input = 400. Output = 120
+1. Activation 
+1. Dropout
+1. Layer 4: Fully Connected. Input = 120. Output = 84
+1. Activation
+1. Dropout
+1. Layer 5: Fully Connected. Input = 84. Output = 10.
 
 
 ## 7. Test with images on web
